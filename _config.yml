@@ -10,16 +10,14 @@ safe: true
 url: https://www.codemilan.com
 author: Milan Rawal
 
-# edit this section with your information
-# jekyllt.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
 baseurl: /
 title: Milan Rawal's Resume
 name: Milan Rawal
 email: mrawal47@gmail.com
 email_full: mailto:mrawal47@gmail.com
-website: github.io/sustain
-website_full: https://jekyllt.github.io/sustain
+website: blog.codemilan.com
+website_full: https://blog.codemilan.com
 github: codemilan
 twitter: codemeelan
 tel: +97 9860000367
