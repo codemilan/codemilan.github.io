@@ -28,35 +28,31 @@
         <img src="{{ site.baseurl }}static/img/profile.jpg" class="me" alt="Digital Milan">
         <h1>{{ site.name }}</h1>
         <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+            <a href="{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile"></i> {{ site.tel }}</a>
         </p>
         <address>
-            <a href="{{ site.google_maps }}">
-                {{ site.address.street }}<br/>
-                {{ site.address.postcode }}<br/>
-                {{ site.address.city }}<br/>
-                {{ site.address.country }}
-            </a>
+            <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-location-pin"></i> {{ site.address.street }} - {{ site.address.postcode }}, {{ site.address.city }}, {{ site.address.country }}</a>
         </address>
         <p>
-            <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
+            <a href="{{ site.website_full }}" target="_blank"><i class="fa fa-link"></i> {{ site.website }}</a><br/>
         </p>
         <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
+            <a href="{{ site.email_full }}" target="_blank"><i class="fa fa-envelope"></i> {{ site.email }}</a><br/>
+            <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a><br/>
+            <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
         </p>
     </header>
     <div class="thirteen columns clearfix">
 
         {{ content }}
 
-    <footer class="thirteen columns">
-        <p>© All rights reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
-            <a href="https://www.github.com/codemilan/codemilan.github.io">codemilan.com</a> with ♥</p>
-    </footer>
+        <footer class="twelve columns">
+            <p>© All rights reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+                <a href="https://www.github.com/codemilan/codemilan.github.io">codemilan.com</a> with ♥</p>
+        </footer>
     </div>
 </div>
+
 <a href="https://github.com/codemilan/codemilan.github.io">
     <img style="position: absolute; top: 0; right: 0; border: 0;"
          src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
