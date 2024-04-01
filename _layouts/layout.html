@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.name }}'s Resume">
-    <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.title }}</title>
+        <meta name="description" content="{{ site.name }}'s Resume">
+        <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/skeleton.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}static/css/layout.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}static/css/base.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}static/css/skeleton.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}static/css/layout.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
-    <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
-    <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
-</head>
-<body>
-<div class="container">
-    <header class="three columns">
-        <img src="{{ site.baseurl }}static/img/profile.jpg" class="me" alt="Digital Milan">
-        <h1>{{ site.name }}</h1>
-        <p>
-            <a href="{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile"></i> {{ site.tel }}</a>
-        </p>
-        <address>
-            <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-location-pin"></i> {{ site.address.street }} - {{ site.address.postcode }}, {{ site.address.city }}, {{ site.address.country }}</a>
-        </address>
-        <p>
-            <a href="{{ site.website_full }}" target="_blank"><i class="fa fa-link"></i> {{ site.website }}</a><br/>
-        </p>
-        <p>
-            <a href="{{ site.email_full }}" target="_blank"><i class="fa fa-envelope"></i> {{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a><br/>
-            <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
-        </p>
-    </header>
-    <div class="thirteen columns clearfix">
+        <link rel="shortcut icon" href="{{ site.baseurl }}static/img/favicon.ico">
+        <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
+        <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
+        <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
+    </head>
 
-        {{ content }}
+    <body>
+        <!-- icon for blog and location not working. -->
+        <div class="container">
+            <header class="three columns">
+                <img src="{{ site.baseurl }}static/img/profile.jpg" class="me" alt="Digital Milan">
+                <h1>{{ site.name }}</h1>
+                <p>
+                    <a href="{{ site.tel_full }}" target="_blank"><i class="fa fa-mobile"></i> {{ site.tel }}</a>
+                </p>
+                <address>
+                    <a href="{{ site.google_maps }}" target="_blank"><i class="fa fa-location-pin"></i> {{ site.address.street }} - {{ site.address.postcode }}, {{ site.address.city }}, {{ site.address.country }}</a>
+                </address>
+                <p>
+                    <a href="{{ site.website_full }}" target="_blank"><i class="fa fa-link"></i> {{ site.website }}</a><br/>
+                </p>
+                <p>
+                    <a href="{{ site.email_full }}" target="_blank"><i class="fa fa-envelope"></i> {{ site.email }}</a><br/>
+                    <a href="https://github.com/{{ site.github }}" target="_blank"><i class="fa fa-github"></i> Github</a><br/>
+                    <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                </p>
+            </header>
+            <div class="thirteen columns clearfix">
 
-        <footer class="twelve columns">
-            <p>© All rights reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
-                <a href="https://www.github.com/codemilan/codemilan.github.io">codemilan.com</a> with ♥</p>
-        </footer>
-    </div>
-</div>
+                {{ content }}
 
-<a href="https://github.com/codemilan/codemilan.github.io">
-    <img style="position: absolute; top: 0; right: 0; border: 0;"
-         src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
-         alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+                <footer class="twelve columns">
+                    <p>© All rights reserved. Powered by <a href="https://jekyllrb.com/">Jekyll</a> and
+                        <a href="https://www.github.com/codemilan/codemilan.github.io">codemilan.com</a> with ♥</p>
+                </footer>
+            </div>
+        </div>
 
-<!--<script>-->
-<!--  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
-<!--  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
-<!--  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
-<!--  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');-->
+        <a href="https://github.com/codemilan/codemilan.github.io">
+            <img style="position: absolute; top: 0; right: 0; border: 0;"
+                 src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67"
+                 alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
 
-<!--  ga('create', '{{ site.google_analytics }}', 'auto');-->
-<!--  ga('send', 'pageview');-->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160257468-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-<!--</script>-->
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160257468-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-160257468-2');
-</script>
-
-</body>
+            gtag('config', 'UA-160257468-2');
+        </script>
+    </body>
 </html>
